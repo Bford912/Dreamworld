@@ -1,0 +1,1035 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:og="http://ogp.me/ns#"     
+      xmlns:fb="http://ogp.me/ns/fb">
+<head>
+<title>XboxMAD.net</title>
+<meta property="og:title" content="ICXM.net" /><meta name="msvalidate.01" content="7454E8D33DAB71F7CA5E3C7D59512CB0" />
+<meta name="application-name" content="ICXM.net"/>
+ <meta name="msapplication-TileColor" content="#000000"/>
+ <meta name="msapplication-square70x70logo" content="tiny.png"/>
+ <meta name="msapplication-square150x150logo" content="square.png"/>
+ <meta name="msapplication-wide310x150logo" content="wide.png"/>
+ <meta name="msapplication-square310x310logo" content="large.png"/>
+ <meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=http://www.icxm.net/team/rss.php?category=1&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=http://www.icxm.net/team/rss.php?category=1&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=http://www.icxm.net/team/rss.php?category=1&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=http://www.icxm.net/team/rss.php?category=1&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=http://www.icxm.net/team/rss.php?category=1&amp;id=5; cycle=1"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="shortcut icon" href="http://www.ICXM.net/x/img/favicon.ico?v=10">
+
+<title>ICXM.net</title>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+
+<link href="scripts/style_desktop.css" rel="stylesheet" type="text/css" />
+<link href="scripts/style_mobile.css" rel="stylesheet" type="text/css" />
+<link href="scripts/style_all.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="scripts/scrolltop.js"></script>
+<script type="text/javascript" src="scripts/headroom.js"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="scripts/glider-news.css"/>
+<script type="text/javascript" src="scripts/glider-js.js"></script>
+<link rel="stylesheet" type="text/css" href="scripts/glider-featured.css"/>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+featuredcontentglider.init({
+	gliderid: "slideshow2", //ID of main glider container
+	contentclass: "glidecontent2", //Shared CSS class name of each glider content
+	togglerid: "p-select2", //ID of toggler container
+	remotecontent: "", //Get gliding contents from external file on server? "filename" or "" to disable
+	selected: 0, //Default selected content index (0=1st)
+	persiststate: true, //Remember last content shown within browser session (true/false)?
+	speed: 750, //Glide animation duration (in milliseconds)
+	direction: "downup", //set direction of glide: "updown", "downup", "leftright", or "rightleft"
+	autorotate: true, //Auto rotate contents (true/false)?
+	autorotateconfig: [4500, 50], //if auto rotate enabled, set [milliseconds_btw_rotations, cycles_before_stopping]
+	onChange: function(previndex, curindex, $allcontents){ // fires when Glider changes slides
+  		//custom code here
+	}
+})
+</script>
+
+<a name="top"></a>
+<div id="container">
+<div id="header_include">
+<link href="scripts/style_all.css" rel="stylesheet" type="text/css">
+<link href="scripts/style_desktop.css" rel="stylesheet" type="text/css">
+<link href="scripts/style_mobile.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<div id="container">
+
+<div style="position:fixed; bottom:0; left:0; z-index:9001; display:none;">
+<img src="img/icon_alpha.png" width="60" height="60" />
+</div>
+
+
+
+<div id="header_background">
+	<div id="header_container">
+	<div id="header">
+      <div id="navigation">
+                <ul>
+              <li><a class="nav" href="/x/xbox">Xbox</a></li>
+              <li><a class="nav" href="/x/windows">Windows</a></li>
+              <li><a class="nav" href="/x/opinion">Opinion</a></li>
+              <li><a class="nav" href="/x/reviews">Reviews</a></li>
+              <li><a class="nav" target="_blank" href="http://www.youtube.com/xboxmadtv">Media</a></li>
+              <li><a class="nav" target="_blank" href="http://www.icxm.net/madcast">ICXM Podcast</a></li>
+              <li><a class="nav" href="/x/contact">Team</a></li>
+                            <li><a class="nav" target="_blank" href="http://www.icxm.net/x/open-discussions.html">Discuss</a></li>
+              <li></li>
+              <li>
+                    <form action="search.php">
+                    <input type="hidden" name="dosearch" value="yes" />
+                    <!-- indication of $dosearch option required -->
+                    <input name="search" type="text" style="background-color: #009900; background-image: url(img/icon_search.png); background-repeat: no-repeat; color: #ffffff; font-face: segoe ui; padding: 10px 10px 10px 30px; background-position: 5px 6px; border: none; width: 70px;" />
+                    <!-- specify the search form -->
+                  </form>
+                  </li>
+                </ul>
+            </div>  
+   	  <div id="wide_social">
+       	  <div style="position:relative; float:left; height:80px;"><a href="http://www.ICXM.net" target="_self"><img src="img/logo.png" width="315" height="80" /></a></div>
+       	  <div style="position: absolute; top: 45px; left: 240px;"><a href="http://www.facebook.com/ICXM.net" target="_blank"><img src="img/icon_facebook.png" alt="" width="20" height="20" class="social_icon" /></a><a href="http://www.twitter.com/xboxmad" target="_blank"><img src="img/icon_twitter.png" alt="" width="20" height="20" class="social_icon" /></a><a href="http://www.youtube.com/xboxmadtv" target="_blank"><img src="img/icon_youtube.png" alt="" width="20" height="20" class="social_icon" /></a></div>
+    	</div>
+        <div id="mobile_social">
+        <div style="position: relative; float: left;">
+          <a href="http://www.ICXM.net"><img style="width:175px; height:80px;" src="img/logo_mobile.png" /></a>
+          <div style="position: absolute; height: 18px; right: 0px; float: right; right: -60px; top: 35px;"><a href="http://www.facebook.com/ICXM.net" target="_blank"><img src="img/icon_facebook.png" alt="" width="50" height="50" class="social_icon" /></a><a href="http://www.twitter.com/xboxmad" target="_blank"><img src="img/icon_twitter.png" alt="" width="18" height="18" class="social_icon" /></a><a href="http://www.youtube.com/xboxmadtv" target="_blank"><img src="img/icon_youtube.png" alt="" width="20" height="20" class="social_icon" /></a></div>
+        </div>
+        </div>
+		<div id="wide_nav">
+		  <div style="position: absolute; height: 30px; right: 85px;">
+            <ul id="MenuBar1" class="MenuBarHorizontal">
+              <li><a class="nav" href="/x/xbox">Xbox</a></li>
+              <li><a class="nav" href="/x/windows">Windows</a></li>
+              <li><a class="nav" href="/x/opinion">Opinion</a></li>
+              <li><a class="nav" href="/x/reviews">Reviews</a></li>
+              <li><a class="nav" target="_blank" href="http://www.youtube.com/xboxmadtv">Media</a></li>
+              <li><a class="nav" href="/x/contact">Team</a></li>
+              <li><a class="nav" href="http://www.icxm.net/x/open-discussions.html">Discuss</a></li>
+            </ul>
+          </div>
+	  </div>
+	  <div id="mobile_nav">
+       <span id="toggle-menu">Menu</span></div>
+	</div>
+    </div>
+</div>
+</div>
+
+<div class="ad_mobile">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Mob -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:50px"
+     data-ad-client="ca-pub-1860524539711715"
+     data-ad-slot="5557689582"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<script type="text/javascript">
+var myElement = document.querySelector("#header");
+var headroom  = new Headroom(myElement);
+headroom.init(); </script>
+
+<script type="text/javascript">
+var myElement = document.querySelector("#header_background");
+var headroom  = new Headroom(myElement);
+headroom.init();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49316647-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+</div>
+
+<div id="content_container">
+  	<div id="ad_wide">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ForumWide2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-1860524539711715"
+     data-ad-slot="7585205988"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>    </div>
+  	<div id="column_main">
+    <script type="text/javascript"> var regex = /^[\.A-z0-9_\-\+]+[@][A-z0-9_\-]+([.][A-z0-9_\-]+)+[A-z]$/; var regex2 = /((http(s?):\/\/)|(www\.))([\w\.]+)([\/\w+\.-?]+)/; /* Dealing with cookies */ function cn_get_cookie_val(offset) { var endstr = document.cookie.indexOf (";", offset); if (endstr == -1) endstr = document.cookie.length; return decodeURIComponent(document.cookie.substring(offset, endstr)); } function cn_get_cookie(name) { var arg = name + "="; var alen = arg.length; var clen = document.cookie.length; var i = 0; while (i < clen) { var j = i + alen; if (document.cookie.substring(i, j) == arg) return cn_get_cookie_val (j); i = document.cookie.indexOf(" ", i) + 1; if (i == 0) break; } return null; } function cn_set_cookie(name, value) { var argv = cn_set_cookie.arguments; var argc = cn_set_cookie.arguments.length; var expires = (argc > 2) ? argv[2] : null; var domain = (argc > 3) ? argv[3] : null; var secure = (argc > 4) ? argv[4] : false; var path = '/'; document.cookie = name + "=" + encodeURIComponent (value) + ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) + ((path == null) ? "" : ("; path=" + path)) + ((domain == null) ? "" : ("; domain=" + domain)) + ((secure == true) ? "; secure" : ""); } /* -------------- Get ID in misc browser ------------------ */ function cn_get_id(id) { if (document.all) return (document.all[id]); else if (document.getElementById) return (document.getElementById(id)); else if (document.layers) return (document.layers[id]); else return null; } function forget_me() { var t = null, i = 0; t = document.getElementsByTagName('input'); for (i = 0; i < t.length; i++) { if (t[i].className == 'cn_comm_username' || t[i].className == 'cn_comm_email') { t[i].value = ''; t[i].disabled = ''; } } cn_set_cookie('session', ''); alert("All Your personal information collected by CuteNews has been deleted!\n\nEnjoy your anonymity."); window.location.reload(true); } function cn_more_expand(id) { var dis = cn_get_id(id); if (dis.style.display == 'none') dis.style.display = 'block'; else dis.style.display = 'none'; } function insertext(text, id) { cn_get_id(id).value +=" "+ text; cn_get_id(id).focus(); } </script>
+<noscript>Your browser is not Javascript enable or you have turn it off. We recommend you to activate for better security reason</noscript><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Misc/Satya-Nadella-news-1024x682.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html">Xbox and games are key to Microsoft&#039;s future according to Satya Nadella</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /> <img src="http://www.xboxmad.net/team/uploads/icon_windows.png" /> <img src="http://www.xboxmad.net/team/uploads/icon_features.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    	</a> Jun 26, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">When one thinks of Microsoft, the first ideas that come to mind are probably productivity and business. When Satya Nadella took over the company last year, one of his key goals was to make people love Microsoft and its products. In a new mission statement sent to Microsoft employees, Nadella said gaming would be key in realizing his broader vision for Windows. The company wants to unite all of its gaming-oriented initiatives. Nadella emphasized that gaming across Xbox One, Windows devices, and HoloLens belongs at the heart of his vision for the future of the company.<br />
+<br />
+Click here to read on.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=Xbox and games are key to Microsoft&#039;s future according to Satya Nadella%20via%20%40XboxMAD&url=http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html" data-text="Xbox and games are key to Microsoft&#039;s future according to Satya Nadella" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Misc/slashdash_art.png'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/slash-dash-hip-men.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/slash-dash-hip-men.html">PREVIEW: SlashDash</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_video.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="https://www.youtube.com/watch?v=e-Ro3nXGvU8">From The Hip Men<br />
+    	</a> Jun 26, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">From The Hip Men are on a roll when it comes to covering new independent titles for the Xbox One. They have provided us with hours of entertainment through previews of the most exciting games. Today, Greg and Lee play SlashDash. SlashDash is a cooperative game for four players. The title features a capture the flag mode, mirror mode, assassination mode and, lastly, the awesome death race mode. For example, while playing capture the flag, two teams of ninjas slash and teleport their way to flags and glory in this local multiplayer showdown. Combat is fast-paced, strategic and deceptively simple.<br />
+<br />
+Click here to see the gameplay.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/slash-dash-hip-men.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/slash-dash-hip-men.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/slash-dash-hip-men.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/slash-dash-hip-men.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/slash-dash-hip-men.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/slash-dash-hip-men.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=PREVIEW: SlashDash%20via%20%40XboxMAD&url=http://www.icxm.net/x/slash-dash-hip-men.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/slash-dash-hip-men.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/slash-dash-hip-men.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/slash-dash-hip-men.html" data-text="PREVIEW: SlashDash" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/FIFA-16/e16947de-c310-45f2-a0ed-7aa941651a03-620x372.jpeg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html">FIFA 16 and Rory McIlroy PGA Tour now available for pre-order on Xbox One													</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    	</a> Jun 26, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">FIFA 16 and Rory McIlroy PGA Tour are now available for pre-order on Xbox One. Rory McIlroy PGA Tour releases on July 14 and costs $59.99. Only one version is available and it is a rather sizable 26.65 GB download. FIFA 16 releases on September 22 and comes in multiple versions. This is where things get interesting. The standard game costs $59.99. There is a Deluxe Edition that costs $69.99 if you want some Ultimate Team players. However, if you want to go all out and gets all Ultimate Team players and additional pre-order perks, there is a Super Deluxe Edition for $99.99. <br />
+<br />
+Click here for more information.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=FIFA 16 and Rory McIlroy PGA Tour now available for pre-order on Xbox One													%20via%20%40XboxMAD&url=http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html" data-text="FIFA 16 and Rory McIlroy PGA Tour now available for pre-order on Xbox One													" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Misc/Screen+Shot+2015-06-26+at+2.50.37+PM.png'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/q-out-now-xbox-kinect.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html">Japanese problem solving Kinect game Q out now on Xbox One</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    	</a> Jun 26, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">Q, a new problem solving game from developers liica and OrangeBox, is now available on Xbox One. The title costs $5.99 and is a 514.34 MB download. Q is a Kinect-enabled title that uses the peripheral in interesting ways. What&#039;s surprising about the game is that it comes from a Japanese studio so it features some interesting uses for motion controls. Are you capable of getting a ball out of a cup? If you are confident that you can, Q challenges you. <br />
+<br />
+Click here to see the trailer.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=Japanese problem solving Kinect game Q out now on Xbox One%20via%20%40XboxMAD&url=http://www.icxm.net/x/q-out-now-xbox-kinect.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/q-out-now-xbox-kinect.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/q-out-now-xbox-kinect.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/q-out-now-xbox-kinect.html" data-text="Japanese problem solving Kinect game Q out now on Xbox One" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/HoloLens/fc0b3b62f4.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html">HoloLens to be used on the International Space Station</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_windows.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="https://twitter.com/RTEnvi">Matt<br />
+    	</a> Jun 26, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">Today NASA revealed that they will be taking on Microsoft’s HoloLens headset, for use on the International Space Station. Two of the headsets are currently being experimented with, and will be sent up to the station to help astronauts with training. They are set to be sent up this weekend, via a SpaceX resupply. This will make it possible to assist and support those on the station from back on Earth.<br />
+<br />
+Hit the break to continue reading.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=HoloLens to be used on the International Space Station%20via%20%40XboxMAD&url=http://www.icxm.net/x/hololens-to-be-used-on-ISS.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/hololens-to-be-used-on-ISS.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/hololens-to-be-used-on-ISS.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html" data-text="HoloLens to be used on the International Space Station" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Windows-Phone-and-Lumia/Windows-10-on-phones_1.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html">Windows 10 Mobile Insider Preview Build 10149 rolling out now</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_windows.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/beetlecomet">Alan Walsh<br />
+    	</a> Jun 25, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">Microsoft have released a new build of Windows 10 Mobile to Windows Insiders on the Fast ring today, titled Build 10149. Insiders last week who choose to stay on Build 10080 rather than roll-back to Windows Phone 8.1 to get Build 10136 will be able to upgrade from Build 10080 to Build 10149 without any hassle. Included in this build is Microsoft Edge branding, improvements to the interface and Cortana, as well as an updated Photos app and automatic photo uploads onto OneDrive. <br />
+<br />
+Hit the break below for a greater look at what’s included in Windows 10 Mobile Build 10149!<br />
+</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=Windows 10 Mobile Insider Preview Build 10149 rolling out now%20via%20%40XboxMAD&url=http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/Windows-10-Mobile-10149-Insider-Preview.html" data-text="Windows 10 Mobile Insider Preview Build 10149 rolling out now" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Misc/d5ecd581bf9cda1c4c09818816378941.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/planetside2-coming-xbox.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/planetside2-coming-xbox.html">PlanetSide 2 will be ported to Xbox One according to Daybreak Games</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    	</a> Jun 25, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">We have confirmation. PlanetSide 2 will be coming to Xbox One. Andy Sites, Director of Development at Daybreak Games, was recently asked what was next for PlanetSide 2 and whether or not we would see the game on Xbox One. Sites replied, <em>&quot;Right now, our focus is PS4, but we&#039;re absolutely looking at Xbox One. Once we get PS4 done, we&#039;re going to start working on Xbox One work. We would love to do it all at once.&quot;</em><br />
+<br />
+Click here for more.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/planetside2-coming-xbox.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/planetside2-coming-xbox.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/planetside2-coming-xbox.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/planetside2-coming-xbox.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/planetside2-coming-xbox.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/planetside2-coming-xbox.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=PlanetSide 2 will be ported to Xbox One according to Daybreak Games%20via%20%40XboxMAD&url=http://www.icxm.net/x/planetside2-coming-xbox.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/planetside2-coming-xbox.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/planetside2-coming-xbox.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/planetside2-coming-xbox.html" data-text="PlanetSide 2 will be ported to Xbox One according to Daybreak Games" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/The-Witcher-3/witcher_3-1-1.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/witcher3-105-patch-out.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/witcher3-105-patch-out.html">Witcher 3 patch 1.05 out now on Xbox One, improves overall performance</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    	</a> Jun 25, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">A new patch for The Witcher 3: Wild Hunt just released on Xbox One. Patch 1.05 introduces a number of changes to improve the game’s overall performance. Some of the fixes include preventing the Potion of Clearance from jumping into the quick slot, changes to the menu, and addressing the annoying gate glitch in the Viper School Gear crypt. The team is also working on another larger update that will bring a large number of amendments to the game. <br />
+<br />
+Click here for details about the patch.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/witcher3-105-patch-out.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/witcher3-105-patch-out.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/witcher3-105-patch-out.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/witcher3-105-patch-out.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/witcher3-105-patch-out.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/witcher3-105-patch-out.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=Witcher 3 patch 1.05 out now on Xbox One, improves overall performance%20via%20%40XboxMAD&url=http://www.icxm.net/x/witcher3-105-patch-out.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/witcher3-105-patch-out.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/witcher3-105-patch-out.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/witcher3-105-patch-out.html" data-text="Witcher 3 patch 1.05 out now on Xbox One, improves overall performance" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Fallout/2883995-fallout4site.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/bethesda-2016-conference-unlikely.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/bethesda-2016-conference-unlikely.html">Bethesda probably won&#039;t hold an E3 2016 showcase</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"></div>
+    	<div class="news_author"><span class="smaller_text"><a href="https://twitter.com/RTEnvi">Matt<br />
+    	</a> Jun 25, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">This E3, Bethesda Softworks, publisher behind both Fallout and The Elder Scrolls offered an E3 Showcase for 2015, showing all upcoming games for the coming years. This is usually a norm for large publishers, however due to the few franchises they have to offer compared to other companies, press conferences have rarely been an option. It looks like this conference was a one off, and may not happen for a while according the Pete Hines from Bethesda.<br />
+<br />
+Hit the break for the full story and interview.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/bethesda-2016-conference-unlikely.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/bethesda-2016-conference-unlikely.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/bethesda-2016-conference-unlikely.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/bethesda-2016-conference-unlikely.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/bethesda-2016-conference-unlikely.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/bethesda-2016-conference-unlikely.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=Bethesda probably won&#039;t hold an E3 2016 showcase%20via%20%40XboxMAD&url=http://www.icxm.net/x/bethesda-2016-conference-unlikely.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/bethesda-2016-conference-unlikely.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/bethesda-2016-conference-unlikely.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/bethesda-2016-conference-unlikely.html" data-text="Bethesda probably won&#039;t hold an E3 2016 showcase" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Windows-10/windows+desktop+10+28229.png'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html">Microsoft showcases Windows 10 Hero wallpaper made from light</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_windows.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/beetlecomet">Alan Walsh<br />
+    	</a> Jun 25, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">Microsoft have now confirmed the default desktop background that will be present in Windows 10. Known as the ‘Windows 10 Hero Desktop Image,’ the wallpaper was created by using variations of light to create a special effect on the Windows 10 logo. Microsoft collaborated with the world renowned, San Francisco-based designer Bradley G. Munkowitz (GMUNK) create this iconic Windows 10 image. <br />
+<br />
+Hit the break below for a full look at the desktop background and a behind-the-scenes making of the image.<br />
+</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=Microsoft showcases Windows 10 Hero wallpaper made from light%20via%20%40XboxMAD&url=http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/Windows-10-Hero-Desktop-Image.html" data-text="Microsoft showcases Windows 10 Hero wallpaper made from light" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/gears-of-war-3-7.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html">July&#039;s Games with Gold include Gears 3 and Black Flag, Xbox One subscribers now get two new games every month</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    	</a> Jun 25, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">This July represents two full years since Microsoft began giving Gold members free titles through the Games with Gold program. Today, Microsoft announced that starting next month, Xbox One owners will get two free games every month. Beforehand, only one new game was available to customers and the other game would be the same title from the previous month. To kick this off, Xbox One Gold members can download Assassin&#039;s Creed IV: Black Flag for free on July 1. So Many Me will then be available as a free download from July 16 to August 15.<br />
+<br />
+Click here for more details.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=July&#039;s Games with Gold include Gears 3 and Black Flag, Xbox One subscribers now get two new games every month%20via%20%40XboxMAD&url=http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/games-with-gold-july-2gamesnow-gears-assassins.html" data-text="July&#039;s Games with Gold include Gears 3 and Black Flag, Xbox One subscribers now get two new games every month" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Destiny/destiny_ps4.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html">PlayStation-exclusive Destiny content coming to Xbox this fall</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="https://twitter.com/RTEnvi">Matt<br />
+    	</a> Jun 25, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">Since the announcement of Destiny, developers of the franchise, Bungie, have worked closely with Sony to assure the ‘premium’ Destiny experience is made for Playstation 4. Currently players on PS4 and PS3 have access to exclusive gear, weapons, and maps for no extra price, due to this deal. We have previously been given indication that this content would be coming to Xbox in the future, and it appears this will be happening during the fall this year.<br />
+<br />
+Hit the break for more details.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=PlayStation-exclusive Destiny content coming to Xbox this fall%20via%20%40XboxMAD&url=http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/destiny-xbox-content-coming-this-fall.html" data-text="PlayStation-exclusive Destiny content coming to Xbox this fall" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Batman/batman+arkham+shite.jpg'); background-position:center left; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html">Batman: Arkham Knight PC sales suspended, PC version suffers from significant technical issues</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_windows.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="https://twitter.com/SpookyWomble">Dean Balloch<br />
+    	</a> Jun 25, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">Warner Bros. Games has suspended sales of the PC version of Batman Arkham Knight as complaints continue to rise regarding the appalling performance of the game. As well as complaints about the locked 30FPS framerate, the game is plagued by technical issues including low-quality textures, stuttering, freezing, crashing and bugs. It was also found that basic graphical features included on the console versions were omitted from the PC version. While the console versions are much more stable, even they are not without fault. Players on Xbox One and PS4 have also reported stuttering and bugs, as well as graphical issues such as an unusually high number of &quot;jaggies&quot;.<br />
+<br />
+Click through to read more about the issue and refund situation.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=Batman: Arkham Knight PC sales suspended, PC version suffers from significant technical issues%20via%20%40XboxMAD&url=http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/batman-arkham-knight-sales-suspended.html" data-text="Batman: Arkham Knight PC sales suspended, PC version suffers from significant technical issues" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Misc/banjo.png'); background-position:center left; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/craig-duncan-interview.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/craig-duncan-interview.html">INTERVIEW: Rare Studio Head Craig Duncan discusses Rare Replay, E3 2015 and more</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://twitter.com/CameronMines">Cam<br />
+    	</a> Jun 24, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">This week we spoke to Studio Head of Rare, Craig Duncan about the future of Rare.<br />
+<br />
+Throughout we discuss E3, Rare Replay, backwards compatibility and much more.<br />
+<br />
+Hit the break to see Craig&#039;s answers.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/craig-duncan-interview.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/craig-duncan-interview.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/craig-duncan-interview.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/craig-duncan-interview.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/craig-duncan-interview.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/craig-duncan-interview.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=INTERVIEW: Rare Studio Head Craig Duncan discusses Rare Replay, E3 2015 and more%20via%20%40XboxMAD&url=http://www.icxm.net/x/craig-duncan-interview.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/craig-duncan-interview.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/craig-duncan-interview.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/craig-duncan-interview.html" data-text="INTERVIEW: Rare Studio Head Craig Duncan discusses Rare Replay, E3 2015 and more" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/E32015/Microsoft-Xbox-media-brief-E3-2015Chart.jpg'); background-position:center left; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/xbox-one-high-interest-after-e3.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/xbox-one-high-interest-after-e3.html">Xbox One was the most popular platform of E3</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="https://twitter.com/RTEnvi">Matt<br />
+    	</a> Jun 24, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">According to online retailer Amazon, Xbox One game and console orders rose over the week after E3, larger than many competitors. Many first-party or exclusive games rose rapidly up the charts, with Forza Motorsport 6, and Rare Replay seeing the largest increase in customer interest. Rare Replay is the title with the largest number of pre-orders, out of those announced at E3. Forza saw the largest increase in pre-orders for a title announced prior.<br />
+<br />
+Hit the break for the full story.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/xbox-one-high-interest-after-e3.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/xbox-one-high-interest-after-e3.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/xbox-one-high-interest-after-e3.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/xbox-one-high-interest-after-e3.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/xbox-one-high-interest-after-e3.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/xbox-one-high-interest-after-e3.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=Xbox One was the most popular platform of E3%20via%20%40XboxMAD&url=http://www.icxm.net/x/xbox-one-high-interest-after-e3.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/xbox-one-high-interest-after-e3.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/xbox-one-high-interest-after-e3.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/xbox-one-high-interest-after-e3.html" data-text="Xbox One was the most popular platform of E3" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/Misc/c65661d2ce0811607af24a20c577c203.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/people-can-fly-indp-now.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/people-can-fly-indp-now.html">Gears of War: Judgment developer People Can Fly becomes an independent studio, acquires Bulletstorm</a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    	</a> Jun 24, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text">Bulletstorm and Gears of War: Judgment developer People Can Fly is now an independent studio. The company was acquired by Epic Games two years ago and renamed Epic Games Poland. However, they have now regained their independence and acquired the Bulletstorm franchise from Epic Games. The studio also confirmed that they are working on a brand new project but it is unclear what it is. Sebastian Wojciechowski from People Can Fly stated that the title was an <em>“entirely new unannounced game.”</em><br />
+<br />
+Click here for more information.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/people-can-fly-indp-now.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/people-can-fly-indp-now.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/people-can-fly-indp-now.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/people-can-fly-indp-now.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/people-can-fly-indp-now.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/people-can-fly-indp-now.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=Gears of War: Judgment developer People Can Fly becomes an independent studio, acquires Bulletstorm%20via%20%40XboxMAD&url=http://www.icxm.net/x/people-can-fly-indp-now.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/people-can-fly-indp-now.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/people-can-fly-indp-now.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/people-can-fly-indp-now.html" data-text="Gears of War: Judgment developer People Can Fly becomes an independent studio, acquires Bulletstorm" data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div class="news_container">
+	<div class="news_background" style="background-image: url('http://www.icxm.net/team/uploads/The-Witcher-3/Witcher-3-geralt.jpg'); background-position:center center; background-size:cover;">
+<a class="link_block" href="http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html"></a>
+   	  <div class="news_title">
+      <div style="padding: 15px; position: relative;"><span class="news_font_title"><a href="http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html">This week&#039;s free Witcher 3 DLC includes a new contract and Skellige armor set </a></span></div></div>
+<div style="position: absolute; bottom: 0; left: 0; z-index: 1000; padding: 15px;"><img src="http://www.xboxmad.net/team/uploads/icon_xbox_logo.png" /> <img src="http://www.xboxmad.net/team/uploads/icon_windows.png" /></div>
+    	<div class="news_author"><span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    	</a> Jun 24, 2015</span></div>
+  </div>
+     <div class="news_preview"><span class="article_text"><strong>Update:</strong> This week&#039;s DLC is now available on Xbox One. <br />
+<br />
+This week&#039;s free Witcher 3 content was just unveiled by CD Projekt RED. Customers will get the rather ornate Skellige armor set and a new contract that involves a rock troll. Rock trolls are notoriously difficult to take down so I hope we just talk to him rather than fight. The game is very difficult on the highest combat setting! I could play it on something else but you know, I have to get those achievements. Also, unlike free add-ons available for other titles, The Witcher 3&#039;s quests are substantial and will keep you occupied for a while. They have multiple parts and multiple objectives. <br />
+<br />
+Click here for more information.</span></div>
+     <div class="news_controls">
+       <div class="news_readmore_mobile">
+         <div style="position: relative; float: left; margin: 0px 5px 0px 0px;"><a href="http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="13" height="13" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html">More</a></span></div>
+       </div>
+       <div class="news_readmore">
+         <div style="position: relative; float: left; margin-right: 5px;"> <a href="http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html" class="arrowbutton"><img src="img/icon_right.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right; padding-top: 2px;"><span class="smaller_text2"><a href="http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html">More</a></span></div>
+       </div>
+       <div class="news_comedycount">
+         <div style="float: left; position: relative; margin-right: 5px;"> <a href="http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+         <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html#disqus_thread"></a></span></div>
+       </div>
+       <div class="news_twitter">
+         <div style="float: left; position: relative;"><a href="http://twitter.com/share?text=This week&#039;s free Witcher 3 DLC includes a new contract and Skellige armor set %20via%20%40XboxMAD&url=http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html">
+       <img src="img/icon_twitter.png" alt="" width="18" height="18" /></a></div>
+       </div>
+       <div class="news_facebook">
+       <div style="float: left; position: relative;"><a href="http://www.facebook.com/sharer.php?u=http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html"><img src="img/icon_facebook.png" width="18" height="18" /></a></div></div>
+       <div class="news_share">
+       <div style="float: right; position: relative; width: 90px; text-align: right; margin-top: 15px; margin-right: 5px; overflow: hidden;">
+         <iframe src="//www.facebook.com/plugins/like.php?href=http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html&locale=en_US&width&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=240268096173057" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowtransparency="true"></iframe>
+       </div>
+       <div style="float: right; position: relative; text-align: right; width: 75px; margin-top: 15px; margin-right: 20px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.icxm.net/x/june-22-witcher3-armor-rock-troll.html" data-text="This week&#039;s free Witcher 3 DLC includes a new contract and Skellige armor set " data-via="XboxMAD" data-related="XboxMAD" data-hashtags="XboxOne">Tweet</a>
+       <script>!function(d,s,id)}(document, 'script', 'twitter-wjs');</script>     	</div>
+   	   </div>
+     </div>
+</div>
+
+<div style="position:Relative; height:20px; clear:both;"></div><div style="position: relative; overflow: hidden; margin-bottom:  20px;">
+    <div style="float:right; display: table-cell; vertical-align: middle; background-color:#009900; position: relative; padding:15px;"><a class="cn-next-news" href="/x/list-17.html"><span class="mid_text">Older</span></a></div>
+  <div style="float: left; position: relative; background-color: #009900; z-index: 500;">
+    <div style="position: relative; padding:14.5px"><a href="javascript:history.back()" class="arrowbutton"><img src="img/icon_left.png" alt="" width="18" height="18" /></a></div></div></div><!-- News Powered by CuteNews: http://cutephp.com/ -->  </div>
+  
+ <div id="column_sidebar">
+    
+
+<link href="scripts/style_all.css" rel="stylesheet" type="text/css">
+<link href="scripts/style_desktop.css" rel="stylesheet" type="text/css">
+<link href="scripts/style_mobile.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="scripts/glider-featured.css"/>
+
+<script type="text/javascript">
+
+featuredcontentglider.init({
+	gliderid: "slideshow2", //ID of main glider container
+	contentclass: "glidecontent2", //Shared CSS class name of each glider content
+	togglerid: "p-select2", //ID of toggler container
+	remotecontent: "", //Get gliding contents from external file on server? "filename" or "" to disable
+	selected: 0, //Default selected content index (0=1st)
+	persiststate: true, //Remember last content shown within browser session (true/false)?
+	speed: 750, //Glide animation duration (in milliseconds)
+	direction: "downup", //set direction of glide: "updown", "downup", "leftright", or "rightleft"
+	autorotate: true, //Auto rotate contents (true/false)?
+	autorotateconfig: [4500, 50], //if auto rotate enabled, set [milliseconds_btw_rotations, cycles_before_stopping]
+	onChange: function(previndex, curindex, $allcontents){ // fires when Glider changes slides
+  		//custom code here
+	}
+})
+</script>
+
+
+<script type="text/javascript" src="scripts/ad_tall.js"></script>
+
+
+<div id="sidebar">
+
+<div id="slideshow2" class="glidecontentwrapper2">
+  <div style="position: absolute; bottom: 0; left: 0; z-index: 2000; padding: 15px;">
+    <div style="position: relative; float: left; margin-right: 5px; margin-top: 3px;"><img src="img/icon_news.png" alt="News" width="15" height="15" /></div>
+    <div style="position:relative; float:left;"><span class="smaller_text2">Recent</span></div>
+  </div>
+  <div class="glidecontent2">
+
+<div style="background-position:center center; background-image:url(http://www.icxm.net/team/uploads/Misc/Satya-Nadella-news-1024x682.jpg); background-size:cover; background-repeat:no-repeat; height: 490px;  position:relative; width:300px;">
+  <div style="padding: 15px; position: relative; height: 460px;	background-image: url(img/bg_title_tall_gradient.png); background-size: 100% 100%;"><div style="position: absolute; padding: 15px; left: 0px; top: 0px; max-width:230px;"><span class="news_font_title"><a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html">Xbox and games are key to Microsoft&#039;s future according to Satya Nadella</a></span></div>
+    <div class="news_author">
+ <div style="position: absolute; top: -8px; right: 15px;">
+        <div style="float: left; position: relative; margin-right: 5px;"><a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+        <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/nadella-gaming-important-microsoft-future.html#disqus_thread"></a></span></div>
+      </div>
+<span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    </a>Jun 26, 2015</span></div>
+  </div>
+</div>
+
+</div><div class="glidecontent2">
+
+<div style="background-position:center center; background-image:url(http://www.icxm.net/team/uploads/FIFA-16/e16947de-c310-45f2-a0ed-7aa941651a03-620x372.jpeg); background-size:cover; background-repeat:no-repeat; height: 490px;  position:relative; width:300px;">
+  <div style="padding: 15px; position: relative; height: 460px;	background-image: url(img/bg_title_tall_gradient.png); background-size: 100% 100%;"><div style="position: absolute; padding: 15px; left: 0px; top: 0px; max-width:230px;"><span class="news_font_title"><a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html">FIFA 16 and Rory McIlroy PGA Tour now available for pre-order on Xbox One													</a></span></div>
+    <div class="news_author">
+ <div style="position: absolute; top: -8px; right: 15px;">
+        <div style="float: left; position: relative; margin-right: 5px;"><a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+        <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/fifa-pga-pre-order-now-xb1.html#disqus_thread"></a></span></div>
+      </div>
+<span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    </a>Jun 26, 2015</span></div>
+  </div>
+</div>
+
+</div><div class="glidecontent2">
+
+<div style="background-position:center center; background-image:url(http://www.icxm.net/team/uploads/Misc/Screen+Shot+2015-06-26+at+2.50.37+PM.png); background-size:cover; background-repeat:no-repeat; height: 490px;  position:relative; width:300px;">
+  <div style="padding: 15px; position: relative; height: 460px;	background-image: url(img/bg_title_tall_gradient.png); background-size: 100% 100%;"><div style="position: absolute; padding: 15px; left: 0px; top: 0px; max-width:230px;"><span class="news_font_title"><a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html">Japanese problem solving Kinect game Q out now on Xbox One</a></span></div>
+    <div class="news_author">
+ <div style="position: absolute; top: -8px; right: 15px;">
+        <div style="float: left; position: relative; margin-right: 5px;"><a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+        <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/q-out-now-xbox-kinect.html#disqus_thread"></a></span></div>
+      </div>
+<span class="smaller_text"><a href="http://www.twitter.com/ashermadan">Asher Madan<br />
+    </a>Jun 26, 2015</span></div>
+  </div>
+</div>
+
+</div><div class="glidecontent2">
+
+<div style="background-position:center center; background-image:url(http://www.icxm.net/team/uploads/HoloLens/fc0b3b62f4.jpg); background-size:cover; background-repeat:no-repeat; height: 490px;  position:relative; width:300px;">
+  <div style="padding: 15px; position: relative; height: 460px;	background-image: url(img/bg_title_tall_gradient.png); background-size: 100% 100%;"><div style="position: absolute; padding: 15px; left: 0px; top: 0px; max-width:230px;"><span class="news_font_title"><a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html">HoloLens to be used on the International Space Station</a></span></div>
+    <div class="news_author">
+ <div style="position: absolute; top: -8px; right: 15px;">
+        <div style="float: left; position: relative; margin-right: 5px;"><a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html#comments"><img src="img/icon_commenter.png" alt="" width="18" height="18" /></a></div>
+        <div style="position: relative; float: right;"><span class="smaller_text2"><a href="http://www.icxm.net/x/hololens-to-be-used-on-ISS.html#disqus_thread"></a></span></div>
+      </div>
+<span class="smaller_text"><a href="https://twitter.com/RTEnvi">Matt<br />
+    </a>Jun 26, 2015</span></div>
+  </div>
+</div>
+
+</div><!-- News Powered by CuteNews: http://cutephp.com/ -->    <div id="p-select2" class="glidecontenttoggler2"><a href="#" class="next"><img src="img/icon_up.png" alt="" width="18" height="18" /></a></div>
+  </div>
+<div style="position: Relative; background-color: #333333; margin-bottom: 20px; padding: 15px; margin-top: 20px; overflow: hidden;">
+    <form action="search.php">
+	    <input type="hidden" name="dosearch" value="yes" />
+	    <!-- indication of $dosearch option required -->
+	    <input name="search" type="text" style="background-color: #009900; background-image: url(img/icon_search.png); background-repeat: no-repeat; color: #ffffff; font-face: segoe ui; padding: 10px 10px 10px 30px; background-position: 5px 6px; border: none; width: 230px;" value="Search" />
+	    <!-- specify the search form -->
+      </form>
+	</div>
+	<div style="position: Relative; background-color: #333333; margin-bottom: 20px;"><a href="http://www.icxm.net/madcast"><img src="img/icxm_madcast.jpg" alt="" width="300" height="148" /></a></div>
+	<div style="position: Relative; background-color: #333333; margin-bottom: 20px; padding: 15px; margin-top: 20px;"><span class="smaller_text"> © ICXM.net 2015<br />
+	  A website by <a href="http://www.twitter.com/msfty">@MSFTY</a>    <br />
+<br />
+ICXM is an independent Xbox, Windows and Microsoft fansite. We are unaffiliated with Microsoft and its subsidiaries.</span></div>
+  <div id="ad_tall">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Tall -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-1860524539711715"
+     data-ad-slot="4074519580"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<p>&nbsp;</p>
+  </div>
+</div>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'xboxmad'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+
+</body>
+</html>
