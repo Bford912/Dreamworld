@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.brentaureli.mariobros" >
+    package="com.viktorkrum.mariobros" >
 
     <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="26" />
 
@@ -10,7 +10,7 @@
         android:label="Dreamworld"
         android:theme="@style/GdxTheme" >
         <activity
-            android:name="com.brentaureli.mariobros.AndroidLauncher"
+            android:name="com.viktorkrum.mariobros.AndroidLauncher"
             android:label="Dreamworld"
             android:screenOrientation="landscape"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
