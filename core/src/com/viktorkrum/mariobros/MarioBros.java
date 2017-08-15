@@ -8,8 +8,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class MarioBros extends Game {
 	//Virtual Screen size and Box2D Scale(Pixels Per Meter)
-	public static final int V_WIDTH = 960;
-	public static final int V_HEIGHT = 640;
+	public static final int V_WIDTH = 1366;
+	public static final int V_HEIGHT = 768;
 	public static final float PPM = 100;
 
 	//Box2D Collision Bits
@@ -37,6 +37,9 @@ public class MarioBros extends Game {
 		batch = new SpriteBatch();
 		manager = new AssetManager();
 		manager.load("audio/music/exorcist.mp3", Music.class);
+		manager.load("audio/music/powerdown.wav", Music.class);
+		manager.load("audio/music/simpsons.mp3", Music.class);
+		manager.load("audio/music/fairy.mp3", Music.class);
 
 		manager.load("audio/sounds/coin.wav", Sound.class);
 		manager.load("audio/sounds/bump.wav", Sound.class);
@@ -45,6 +48,10 @@ public class MarioBros extends Game {
         manager.load("audio/sounds/powerup.wav", Sound.class);
         manager.load("audio/sounds/puzzle.wav", Sound.class);
         //manager.load("audio/sounds/precious2.wav", Sound.class);
+		manager.load("audio/sounds/bomb.mp3", Sound.class);
+		manager.load("audio/sounds/thundershot.ogg", Sound.class);
+
+
 
 		manager.load("audio/sounds/powerdown.wav", Sound.class);
 		manager.load("audio/sounds/stomp.wav", Sound.class);

@@ -128,7 +128,7 @@ public class Controller {
 
 
 
-       /* Image upImg = new Image(new Texture("up.png"));
+        Image upImg = new Image(new Texture("up.png"));
         upImg.setSize(50, 50);
         upImg.addListener(new InputListener() {
 
@@ -149,7 +149,7 @@ public class Controller {
             public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
                 upPressed = false;
             }
-        });*/
+        });
 
         Image downImg = new Image(new Texture("down.png"));
         downImg.setSize(100, 100);

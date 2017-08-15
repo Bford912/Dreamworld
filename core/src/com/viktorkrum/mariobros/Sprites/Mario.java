@@ -14,6 +14,7 @@ import com.badlogic.gdx.physics.box2d.EdgeShape;
 import com.badlogic.gdx.physics.box2d.Filter;
 import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
+import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
 import com.viktorkrum.mariobros.MarioBros;
@@ -40,7 +41,7 @@ public class Mario extends Sprite {
     private Animation bigMarioStand;
     private TextureRegion bigMarioJump;
     private Animation bigMarioRun;
-
+    private Music music;
     private Animation marioStand;
 
 
@@ -135,11 +136,25 @@ public class Mario extends Sprite {
         frames.clear();
 
         //set initial values for marios location, width and height. And initial frame as marioStand.
-        setBounds(0, 0, 85 / MarioBros.PPM, 85 / MarioBros.PPM);
+        setBounds(0, 0, 100/ MarioBros.PPM, 100 / MarioBros.PPM);
 
         //setRegion(marioStand);
 
         fireballs = new Array<FireBall>();
+
+
+
+
+        music = MarioBros.manager.get("audio/music/exorcist.mp3", Music.class);
+        MarioBros.manager.get("audio/music/exorcist.mp3", Music.class).setVolume(.2f);
+        music.setLooping(true);
+
+        music.play();
+        music = MarioBros.manager.get("audio/music/fairy.mp3", Music.class);
+        music.setLooping(true);
+
+
+
 
 
 
@@ -209,6 +224,76 @@ public class Mario extends Sprite {
                 break;
         }
 
+
+
+
+
+
+        //setting up portal
+        /*if(b2body.getPosition().y >2. && b2body.getPosition().x <3.0 && b2body.getPosition().x >2.9){
+            b2body.setTransform(65, 3, 0);
+        }*/
+
+        // end of castle world
+        if(b2body.getPosition().y >25 && b2body.getPosition().y <27 && b2body.getPosition().x <14 && b2body.getPosition().x >13.5 ){
+            b2body.setTransform(72.5f, 3, 0);
+
+
+        }
+
+        //first portal selection
+        if(b2body.getPosition().y >4.6 && b2body.getPosition().y <4.8 && b2body.getPosition().x <67.9 && b2body.getPosition().x >67.3 ){
+            b2body.setTransform(3, 3, 0);
+
+
+
+
+        }
+
+        if(b2body.getPosition().y >4.6 && b2body.getPosition().y <4.8 && b2body.getPosition().x <75.9 && b2body.getPosition().x >75.4 ){
+            b2body.setTransform(103, 3, 0);
+
+
+
+
+        }
+
+
+
+
+
+        //setting up easy world
+        if(b2body.getPosition().y >1.5 && b2body.getPosition().y <2 && b2body.getPosition().x <142 && b2body.getPosition().x >141){
+            b2body.setTransform(1, 1, 0);
+
+
+        }
+
+
+
+
+
+
+
+        if(b2body.getPosition().x >101 & b2body.getPosition().x < 400){
+            MarioBros.manager.get("audio/music/exorcist.mp3", Music.class).stop();
+            MarioBros.manager.get("audio/music/fairy.mp3", Music.class).play();
+            music = MarioBros.manager.get("audio/music/fairy.mp3", Music.class);
+            music.setLooping(true);
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
         //if mario is running left and the texture isnt facing left... flip it.
         if((b2body.getLinearVelocity().x < 0 || !runningRight) && !region.isFlipX()){
             region.flip(true, false);
@@ -218,19 +303,6 @@ public class Mario extends Sprite {
         if((b2body.getPosition().y < -2)){
             die();
         }
-
-        //setting up portal
-        if(b2body.getPosition().y >2. && b2body.getPosition().x <3.0 && b2body.getPosition().x >2.9){
-            b2body.setTransform(65, 3, 0);
-        }
-
-        //setting up easy world
-        if(b2body.getPosition().y >1.5 && b2body.getPosition().y <2 && b2body.getPosition().x <142 && b2body.getPosition().x >141){
-            b2body.setTransform(1, 1, 0);
-
-
-        }
-
 
 
 
@@ -259,8 +331,8 @@ public class Mario extends Sprite {
             return State.DEAD;
         else if(runGrowAnimation)
             return State.GROWING;
-        else if((b2body.getLinearVelocity().y > 0 && currentState == State.JUMPING) || (b2body.getLinearVelocity().y < 0 && previousState == State.JUMPING))
-            return State.JUMPING;
+        /*else if((b2body.getLinearVelocity().y > 0 && currentState == State.JUMPING) || (b2body.getLinearVelocity().y < 0 && previousState == State.JUMPING))
+            return State.JUMPING;*/
         //if negative in Y-Axis mario is falling
         /*else if(b2body.getLinearVelocity().y < 0)
             return State.FALLING;*/
@@ -296,7 +368,8 @@ public class Mario extends Sprite {
         if (!isDead()) {
 
             MarioBros.manager.get("audio/music/exorcist.mp3", Music.class).stop();
-            MarioBros.manager.get("audio/sounds/death_cry.wav", Sound.class).play();
+            music = MarioBros.manager.get("audio/music/simpsons.mp3", Music.class);
+            MarioBros.manager.get("audio/music/simpsons.mp3", Music.class).play();
 
             marioIsDead = true;
             Filter filter = new Filter();
@@ -333,12 +406,12 @@ public class Mario extends Sprite {
         return marioIsBig;
     }
 
-   public void jump(){
+  /* public void jump(){
         if ( currentState != State.JUMPING ) {
            // b2body.applyLinearImpulse(new Vector2(0, 6f), b2body.getWorldCenter(), true);
             currentState = State.JUMPING;
         }
-    }
+    }*/
 
     public void hit(com.viktorkrum.mariobros.Sprites.Enemies.Enemy enemy){
         if(enemy instanceof com.viktorkrum.mariobros.Sprites.Enemies.Turtle && ((com.viktorkrum.mariobros.Sprites.Enemies.Turtle) enemy).currentState == com.viktorkrum.mariobros.Sprites.Enemies.Turtle.State.STANDING_SHELL)
@@ -366,7 +439,7 @@ public class Mario extends Sprite {
 
         FixtureDef fdef = new FixtureDef();
         CircleShape shape = new CircleShape();
-        shape.setRadius(25/ MarioBros.PPM);
+        shape.setRadius(24/ MarioBros.PPM);
         fdef.filter.categoryBits = MarioBros.MARIO_BIT;
         fdef.filter.maskBits = MarioBros.GROUND_BIT |
                 MarioBros.COIN_BIT |
@@ -416,7 +489,7 @@ public class Mario extends Sprite {
 
         FixtureDef fdef = new FixtureDef();
         CircleShape shape = new CircleShape();
-        shape.setRadius(17 / MarioBros.PPM);
+        shape.setRadius(24 / MarioBros.PPM);
         fdef.filter.categoryBits = MarioBros.MARIO_BIT;
         fdef.filter.maskBits = MarioBros.GROUND_BIT |
                 MarioBros.COIN_BIT |
@@ -443,14 +516,22 @@ public class Mario extends Sprite {
 
     public void defineMario(){
         BodyDef bdef = new BodyDef();
-        bdef.position.set(14700/ MarioBros.PPM, 40 / MarioBros.PPM);
+        //castle starting position
+        //bdef.position.set(300/ MarioBros.PPM, 300 / MarioBros.PPM);
+
+
+        //dream PORTAL POSITION
+        bdef.position.set(7250/ MarioBros.PPM, 300 / MarioBros.PPM);
+        //bdef.position.set(10000/ MarioBros.PPM, 300 / MarioBros.PPM);
+
+
         bdef.type = BodyDef.BodyType.DynamicBody;
         b2body = world.createBody(bdef);
 
 
         FixtureDef fdef = new FixtureDef();
         CircleShape shape = new CircleShape();
-        shape.setRadius(13/ MarioBros.PPM);
+        shape.setRadius(25/ MarioBros.PPM);
         fdef.filter.categoryBits = MarioBros.MARIO_BIT;
         fdef.filter.maskBits = MarioBros.GROUND_BIT |
                 MarioBros.COIN_BIT |
@@ -463,8 +544,20 @@ public class Mario extends Sprite {
         fdef.shape = shape;
         b2body.createFixture(fdef).setUserData(this);
 
-        EdgeShape head = new EdgeShape();
-        head.set(new Vector2(-2 / MarioBros.PPM, 14/ MarioBros.PPM), new Vector2(2 / MarioBros.PPM, 14 / MarioBros.PPM));
+
+        PolygonShape head = new PolygonShape();
+        Vector2[] vertice = new Vector2[4];
+        vertice[0] = new Vector2(-1, 1).scl(1 / MarioBros.PPM);
+        vertice[1] = new Vector2(1, 1).scl(1 / MarioBros.PPM);
+        vertice[2] = new Vector2(-1, -1).scl(1 / MarioBros.PPM);
+        vertice[3] = new Vector2(1, -1).scl(1 / MarioBros.PPM);
+        head.set(vertice);
+
+
+
+
+       /* EdgeShape head = new EdgeShape();
+        head.set(new Vector2(-2 / MarioBros.PPM, 14/ MarioBros.PPM), new Vector2(2 / MarioBros.PPM, 14 / MarioBros.PPM));*/
         fdef.filter.categoryBits = MarioBros.MARIO_HEAD_BIT;
         fdef.shape = head;
         fdef.isSensor = true;

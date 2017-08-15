@@ -91,10 +91,10 @@ public class Sorc extends Enemy
         //Create the Head here:
         PolygonShape head = new PolygonShape();
         Vector2[] vertice = new Vector2[4];
-        vertice[0] = new Vector2(-19, 41).scl(1 / MarioBros.PPM);
-        vertice[1] = new Vector2(19, 41).scl(1 / MarioBros.PPM);
-        vertice[2] = new Vector2(-19, -41).scl(1 / MarioBros.PPM);
-        vertice[3] = new Vector2(19, -41).scl(1 / MarioBros.PPM);
+        vertice[0] = new Vector2(-38, 38).scl(1 / MarioBros.PPM);
+        vertice[1] = new Vector2(38, 38).scl(1 / MarioBros.PPM);
+        vertice[2] = new Vector2(-38, -38).scl(1 / MarioBros.PPM);
+        vertice[3] = new Vector2(38, -38).scl(1 / MarioBros.PPM);
         head.set(vertice);
 
         fdef.shape = head;
@@ -114,12 +114,12 @@ public class Sorc extends Enemy
     @Override
     public void hitOnHead(com.viktorkrum.mariobros.Sprites.Mario mario) {
         setToDestroy = true;
-        MarioBros.manager.get("audio/sounds/stomp.wav", Sound.class).play();
+        MarioBros.manager.get("audio/sounds/breakblock.wav", Sound.class).play();
     }
 
     public void hitOnHead1(FireBall fireBall){
         setToDestroy = true;
-        MarioBros.manager.get("audio/sounds/stomp.wav", Sound.class).play();
+        MarioBros.manager.get("audio/sounds/breakblock.wav", Sound.class).play();
 
     }
 
