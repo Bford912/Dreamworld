@@ -26,18 +26,27 @@ public class WorldContactListener implements ContactListener {
                 else
                     ((com.viktorkrum.mariobros.Sprites.TileObjects.InteractiveTileObject) fixA.getUserData()).onHeadHit((com.viktorkrum.mariobros.Sprites.Mario) fixB.getUserData());
                 break;
-            case MarioBros.ENEMY_HEAD_BIT | MarioBros.MARIO_BIT:
+           /* case MarioBros.ENEMY_HEAD_BIT | MarioBros.MARIO_BIT:
                 if(fixA.getFilterData().categoryBits == MarioBros.ENEMY_HEAD_BIT)
                     ((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixA.getUserData()).hitOnHead((com.viktorkrum.mariobros.Sprites.Mario) fixB.getUserData());
                 else
                     ((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixB.getUserData()).hitOnHead((com.viktorkrum.mariobros.Sprites.Mario) fixA.getUserData());
-                break;
+                break;*/
             case MarioBros.ENEMY_BIT | MarioBros.OBJECT_BIT:
                 if(fixA.getFilterData().categoryBits == MarioBros.ENEMY_BIT)
                     ((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixA.getUserData()).reverseVelocity(true, false);
                 else
                     ((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixB.getUserData()).reverseVelocity(true, false);
                 break;
+
+            case MarioBros.ENEMY_BIT | MarioBros.GROUND_BIT:
+                if(fixA.getFilterData().categoryBits == MarioBros.ENEMY_BIT)
+                    ((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixA.getUserData()).reverseVelocity(true, false);
+                else
+                    ((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixB.getUserData()).reverseVelocity(true, false);
+                break;
+
+
             case MarioBros.MARIO_BIT | MarioBros.ENEMY_BIT:
                 if(fixA.getFilterData().categoryBits == MarioBros.MARIO_BIT)
                     ((com.viktorkrum.mariobros.Sprites.Mario) fixA.getUserData()).hit((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixB.getUserData());
@@ -45,7 +54,9 @@ public class WorldContactListener implements ContactListener {
                     ((com.viktorkrum.mariobros.Sprites.Mario) fixB.getUserData()).hit((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixA.getUserData());
                 break;
             case MarioBros.ENEMY_BIT | MarioBros.ENEMY_BIT:
+
                 ((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixA.getUserData()).hitByEnemy((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixB.getUserData());
+
                 ((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixB.getUserData()).hitByEnemy((com.viktorkrum.mariobros.Sprites.Enemies.Enemy)fixA.getUserData());
                 break;
             case MarioBros.ITEM_BIT | MarioBros.OBJECT_BIT:

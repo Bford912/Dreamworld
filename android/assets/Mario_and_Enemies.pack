@@ -59,16 +59,23 @@ sorc
   orig: 680, 68
   offset: 0, 0
   index: -1
-lightning1
+doom1
   rotate: false
   xy: 1547, 954
-  size: 475, 68
-  orig: 475, 68
+  size: 408, 68
+  orig: 408, 68
+  offset: 0, 0
+  index: -1
+lightning1
+  rotate: false
+  xy: 803, 542
+  size: 340, 68
+  orig: 340, 68
   offset: 0, 0
   index: -1
 portal2
   rotate: false
-  xy: 803, 542
+  xy: 1547, 884
   size: 340, 68
   orig: 340, 68
   offset: 0, 0
@@ -82,7 +89,7 @@ frieza
   index: -1
 big_mario
   rotate: false
-  xy: 1547, 920
+  xy: 1547, 850
   size: 336, 32
   orig: 336, 32
   offset: 0, 0
@@ -124,14 +131,14 @@ goomba
   index: -1
 fireball
   rotate: false
-  xy: 332, 57
+  xy: 1957, 1014
   size: 32, 8
   orig: 32, 8
   offset: 0, 0
   index: -1
 mushroom
   rotate: false
-  xy: 2024, 1006
+  xy: 1889, 936
   size: 16, 16
   orig: 16, 16
   offset: 0, 0

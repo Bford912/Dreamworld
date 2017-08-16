@@ -57,12 +57,16 @@ public class Goomba extends Enemy
         }
         else if(!destroyed) {
 
-            if(b2body.getPosition().y <= .8){
-                b2body.setLinearVelocity(-3, 6);
+
+
+            if(b2body.getPosition().y <3){
+                b2body.setLinearVelocity(-7, 12);
             }
             else if (b2body.getPosition().y >40){
-                b2body.setLinearVelocity(0, -5);
+                b2body.setLinearVelocity(-7, -7);
             }
+
+
 
             setPosition(b2body.getPosition().x - getWidth() / 2, b2body.getPosition().y - getHeight() / 2);
             setRegion((TextureRegion) walkAnimation.getKeyFrame(stateTime, true));
@@ -80,7 +84,7 @@ public class Goomba extends Enemy
 
         FixtureDef fdef = new FixtureDef();
         CircleShape shape = new CircleShape();
-        shape.setRadius(26/ MarioBros.PPM);
+        shape.setRadius(35/ MarioBros.PPM);
         fdef.filter.categoryBits = MarioBros.ENEMY_BIT;
         fdef.filter.maskBits = MarioBros.GROUND_BIT |
                 MarioBros.FIREBALL_BIT|
@@ -90,16 +94,17 @@ public class Goomba extends Enemy
                 MarioBros.OBJECT_BIT |
                 MarioBros.MARIO_BIT;
 
+
         fdef.shape = shape;
         b2body.createFixture(fdef).setUserData(this);
 
         //Create the Head here:
         PolygonShape head = new PolygonShape();
         Vector2[] vertice = new Vector2[4];
-        vertice[0] = new Vector2(-13, 29).scl(1 / MarioBros.PPM);
-        vertice[1] = new Vector2(13, 29).scl(1 / MarioBros.PPM);
-        vertice[2] = new Vector2(-13, -29).scl(1 / MarioBros.PPM);
-        vertice[3] = new Vector2(13, -29).scl(1 / MarioBros.PPM);
+        vertice[0] = new Vector2(-35, 35).scl(1 / MarioBros.PPM);
+        vertice[1] = new Vector2(35, 35).scl(1 / MarioBros.PPM);
+        vertice[2] = new Vector2(-35, -35).scl(1 / MarioBros.PPM);
+        vertice[3] = new Vector2(35, -35).scl(1 / MarioBros.PPM);
         head.set(vertice);
 
         fdef.shape = head;
@@ -123,11 +128,11 @@ public class Goomba extends Enemy
     @Override
     public void hitOnHead(Mario mario) {
         setToDestroy = true;
-        MarioBros.manager.get("audio/sounds/stomp.wav", Sound.class).play();
+        MarioBros.manager.get("audio/sounds/breakblock.wav", Sound.class).play();
     }
     public void hitOnHead1(FireBall fireBall){
         setToDestroy = true;
-        MarioBros.manager.get("audio/sounds/stomp.wav", Sound.class).play();
+        MarioBros.manager.get("audio/sounds/breakblock.wav", Sound.class).play();
 
     }
 

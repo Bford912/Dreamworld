@@ -6,6 +6,7 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.Cursor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -44,6 +45,7 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
     private OrthographicCamera gamecam;
     private Viewport gamePort;
     private Hud hud;
+    public boolean doubleJumped;
 
 
 
@@ -68,7 +70,7 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
 
     long lastTap = System.currentTimeMillis();
-
+    long lastTap1 = System.currentTimeMillis();
 
 
 
@@ -104,7 +106,7 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
         //Load our map and setup our map renderer
         maploader = new TmxMapLoader();
-        map = maploader.load("level1.tmx");
+        map = maploader.load("leveldesign1.tmx");
         renderer = new OrthogonalTiledMapRenderer(map, 1  / MarioBros.PPM);
 
         //initially set our gamcam to be centered correctly at the start of of map
@@ -113,7 +115,7 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
 
         //create our Box2D world, setting no gravity in X, -10 gravity in Y, and allow bodies to sleep
-        world = new World(new Vector2(0, -10.0F), true);
+        world = new World(new Vector2(0, -15.0F), true);
         //allows for debug lines of our box2d world.
         b2dr = new Box2DDebugRenderer();
 
@@ -124,11 +126,11 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
         world.setContactListener(new WorldContactListener());
 
-        music = MarioBros.manager.get("audio/music/exorcist.mp3", Music.class);
-        MarioBros.manager.get("audio/music/exorcist.mp3", Music.class).setVolume(.1f);
+      /*  music = MarioBros.manager.get("audio/music/exorcist.mp3", Music.class);
+        MarioBros.manager.get("audio/music/exorcist.mp3", Music.class).setVolume(.2f);
         music.setLooping(true);
 
-        music.play();
+        music.play();*/
 
         items = new Array<Item>();
         itemsToSpawn = new LinkedBlockingQueue<com.viktorkrum.mariobros.Sprites.Items.ItemDef>();
@@ -182,15 +184,43 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
 
 
+    public boolean handleInput2 (float dt) {
+
+        if (controller.isUpPressed() && player.b2body.getLinearVelocity().y == 0) {
+
+
+            if (System.currentTimeMillis() - lastTap < 470)
+                return true;
+
+            player.b2body.applyLinearImpulse(new Vector2(0, 7f), player.b2body.getWorldCenter(), true);
+
+            lastTap = System.currentTimeMillis();
+        }
+        return true;
+
+    }
+
+
+
+
     public void handleInput(float dt) {
         if(player.currentState != Mario.State.DEAD) {
 
 
 
-              if (controller.isUpPressed() && player.b2body.getLinearVelocity().y == 0) {
-                  player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
-              }
+           /* if(controller.isUpPressed()) {
 
+
+                if (Gdx.input.isKeyJustPressed(Input.Keys.UP)) {
+                    if (player.b2body.getLinearVelocity().y == 0) {
+                        player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
+                        doubleJumped = false;
+                    } else if (player.b2body.getLinearVelocity().y > 0 && !doubleJumped) {
+                        player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
+                        doubleJumped = true;
+                    }
+                }
+            }*/
 
 
 
@@ -236,11 +266,11 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
                     player.b2body.setLinearVelocity(new Vector2(-4.5f, player.b2body.getLinearVelocity().y));
                 else
                     player.b2body.setLinearVelocity(new Vector2(0, player.b2body.getLinearVelocity().y));
-                if (controller.isUpPressed() && player.b2body.getLinearVelocity().y == 0) {
+               /* if (controller.isUpPressed() && player.b2body.getLinearVelocity().y == 0) {
                     ((Sound) MarioBros.manager.get("audio/sounds/Link_jump.wav", Sound.class)).play();
                     player.b2body.applyLinearImpulse(new Vector2(0, 7f), player.b2body.getWorldCenter(), true);
 
-                }
+                }*/
 
                 if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE))
                     player.fire();
@@ -254,13 +284,7 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
 
 
-            /*if(Gdx.input.isKeyPressed(Input.Keys.RIGHT) && this.player.b2body.getLinearVelocity().x <= 2.0F) {
-                this.player.b2body.applyLinearImpulse(new Vector2(0.3F, 0.0F), this.player.b2body.getWorldCenter(), true);
-            }
 
-            if(Gdx.input.isKeyPressed(Input.Keys.LEFT) && this.player.b2body.getLinearVelocity().x >= -2.0F) {
-                this.player.b2body.applyLinearImpulse(new Vector2(-0.3F, 0.0F), this.player.b2body.getWorldCenter(), true);
-            }*/
     }
 
 
@@ -269,6 +293,7 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
         //handle user input first
         handleInput(dt);
         handleInput1(dt);
+        handleInput2(dt);
         handleSpawningItems();
 
 
@@ -282,8 +307,15 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
         player.update(dt);
         for(com.viktorkrum.mariobros.Sprites.Enemies.Enemy enemy : creator.getEnemies()) {
             enemy.update(dt);
-            if(enemy.getX() < player.getX() + 400 / MarioBros.PPM) {
-                enemy.b2body.setActive(true);
+            if(enemy.getX() < player.getX() + 670 / MarioBros.PPM) {
+                if(player.getX() > 63 && player.getX() < 88){
+                    enemy.b2body.setActive(false);
+                }
+                else enemy.b2body.setActive(true);
+
+            }
+            if(enemy.b2body.isActive() && enemy.getX() < player.getX() - 10 && enemy.getX() > player.getX() -11){
+                enemy.b2body.setTransform(enemy.b2body.getPosition().x + 25, enemy.b2body.getPosition().y, 0);
             }
         }
 
@@ -304,9 +336,10 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
         hud.update(dt);
 
-        //attach our gamecam to our players.x coordinate
+        //attach our gamecam to our players.x  and player.y? coordinate
         if(player.currentState != Mario.State.DEAD) {
             gamecam.position.x = player.b2body.getPosition().x;
+            gamecam.position.y = player.b2body.getPosition().y +1.1f;
         }
 
         //update our gamecam with correct coordinates after changes
@@ -335,6 +368,11 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
         //render our game map
         renderer.render();
+
+
+
+
+
 
         //renderer our Box2DDebugLines
         b2dr.render(world, gamecam.combined);
@@ -413,7 +451,7 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
         world.dispose();
         b2dr.dispose();
         hud.dispose();
-        ;
+
     }
 
 
