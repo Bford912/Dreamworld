@@ -32,7 +32,7 @@ public class Fire extends Enemy
             frames.add(new TextureRegion(screen.getAtlas().findRegion("fire"), i * 53, 0, 600, 80));
         walkAnimation = new Animation(0.1f, frames);
         stateTime = 0;
-        setBounds(getX(), getY(), 740 / MarioBros.PPM, 200 / MarioBros.PPM);
+        setBounds(getX(), getY(), 740 / MarioBros.PPM, 300 / MarioBros.PPM);
         setToDestroy = false;
         destroyed = false;
         angle = 0;

@@ -1,5 +1,6 @@
 package com.viktorkrum.mariobros.Sprites.Other;
 
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
@@ -34,6 +35,7 @@ public class FireBall extends Sprite {
     public static final int WIDTH = 3;
     public static final int HEIGHT = 12;
 
+
     CollisionRect rect;
 
 
@@ -50,7 +52,7 @@ public class FireBall extends Sprite {
 
         fireAnimation = new Animation(0.1f, frames);
         setRegion((TextureRegion) fireAnimation.getKeyFrame(0));
-        setBounds(x, y, 22 / MarioBros.PPM, 22 / MarioBros.PPM);
+        setBounds(x, y, 40 / MarioBros.PPM, 40/ MarioBros.PPM);
         defineFireBall();
 
 
@@ -71,7 +73,7 @@ public class FireBall extends Sprite {
 
         FixtureDef fdef = new FixtureDef();
         CircleShape shape = new CircleShape();
-        shape.setRadius(13 / MarioBros.PPM);
+        shape.setRadius(18 / MarioBros.PPM);
         fdef.filter.categoryBits = MarioBros.FIREBALL_BIT;
         fdef.filter.maskBits = MarioBros.ENEMY_HEAD_BIT |
                 MarioBros.GROUND_BIT |
@@ -84,6 +86,7 @@ public class FireBall extends Sprite {
                 MarioBros.ITEM_BIT;
 
         fdef.shape = shape;
+
 
         b2body.createFixture(fdef).setUserData(this);
         b2body.setLinearVelocity(new Vector2(fireRight ? 9 : -6.5f, 6.5f));
@@ -134,14 +137,21 @@ public class FireBall extends Sprite {
         }
     }
 
-
     public void hit(com.viktorkrum.mariobros.Sprites.Enemies.Enemy enemy){
         if(enemy instanceof com.viktorkrum.mariobros.Sprites.Enemies.Turtle && ((com.viktorkrum.mariobros.Sprites.Enemies.Turtle) enemy).currentState == com.viktorkrum.mariobros.Sprites.Enemies.Turtle.State.STANDING_SHELL)
             ((com.viktorkrum.mariobros.Sprites.Enemies.Turtle) enemy).kick(enemy.b2body.getPosition().x > b2body.getPosition().x ? com.viktorkrum.mariobros.Sprites.Enemies.Turtle.KICK_RIGHT : com.viktorkrum.mariobros.Sprites.Enemies.Turtle.KICK_LEFT);
         else {
 
                 setBounds(getX(), getY(), getWidth(), getHeight() / 2);
-                MarioBros.manager.get("audio/sounds/powerdown.wav", Sound.class).play();
+
+
+
+
+
+
+
+
+
 
         }
     }

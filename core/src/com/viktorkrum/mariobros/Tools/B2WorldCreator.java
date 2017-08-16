@@ -12,6 +12,7 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
 import com.viktorkrum.mariobros.MarioBros;
 import com.viktorkrum.mariobros.Sprites.Enemies.Diablo;
+import com.viktorkrum.mariobros.Sprites.Enemies.Doom;
 import com.viktorkrum.mariobros.Sprites.Enemies.Fire;
 import com.viktorkrum.mariobros.Sprites.Enemies.Skull;
 import com.viktorkrum.mariobros.Sprites.Enemies.Sorc;
@@ -24,6 +25,7 @@ public class B2WorldCreator {
     private Array<com.viktorkrum.mariobros.Sprites.Enemies.Goomba> goombas;
     private Array<com.viktorkrum.mariobros.Sprites.Enemies.Turtle> turtles;
     private Array<Skull> skulls;
+    private Array<Doom> dooms;
     private Array<Diablo> diablos;
     private Array<Sorc> sorcs;
     private Array<Fire> fires;
@@ -125,6 +127,15 @@ public class B2WorldCreator {
             fires.add(new Fire(screen, rect.getX() / MarioBros.PPM, rect.getY() / MarioBros.PPM));
         }
 
+        //create all dooms
+        dooms = new Array<Doom>();
+        for(MapObject object : map.getLayers().get(8).getObjects().getByType(RectangleMapObject.class)){
+            Rectangle rect = ((RectangleMapObject) object).getRectangle();
+            dooms.add(new Doom(screen, rect.getX() / MarioBros.PPM, rect.getY() / MarioBros.PPM));
+        }
+
+
+
         //create all skulls
         skulls = new Array<Skull>();
         for(MapObject object : map.getLayers().get(8).getObjects().getByType(RectangleMapObject.class)){
@@ -144,6 +155,7 @@ public class B2WorldCreator {
     public Array<Skull> getSkulls() {
         return skulls;
     }
+    public Array<Doom> getDooms(){ return dooms;}
 
     public Array<Diablo> getDiablos() {
         return diablos;
@@ -161,6 +173,7 @@ public class B2WorldCreator {
         enemies.addAll(goombas);
         enemies.addAll(turtles);
         enemies.addAll(skulls);
+        enemies.addAll(dooms);
         enemies.addAll(diablos);
         enemies.addAll(sorcs);
         enemies.addAll(fires);
