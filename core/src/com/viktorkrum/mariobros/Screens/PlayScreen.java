@@ -252,6 +252,9 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
                         //Increment jump count
                         jump++;
+
+                        // Clear the upPressed boolean
+                        controller.clearUpPressed();
                     } else if (jump < 2) {
 
                         //Zero out vertical velocity??
@@ -265,11 +268,16 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
                         //Increment the jump counter.
                         jump++;
 
+                        // Clear the upPressed boolean
+                        controller.clearUpPressed();
                     }
                     else {
                         //Reset the jump counter.
                         //Do not perform a jump.
                         jump = 0;
+
+                        // Clear the upPressed boolean
+                        controller.clearUpPressed();
                     }
                 }
             }

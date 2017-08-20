@@ -235,6 +235,10 @@ public class Controller {
         return upPressed;
     }
 
+    public void clearUpPressed() {
+      upPressed = false;
+    }
+
     public boolean isDownPressed() {
         return downPressed;
     }
