@@ -14,10 +14,12 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.Timer;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.viktorkrum.mariobros.MarioBros;
@@ -51,6 +53,14 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
     //jumps made by the player. This should never be greater
     //than 2.
     private int jump;
+
+    private long jumpDelayStart;
+
+    private final int JUMP_DELAY;
+
+    private int jumpDelayTimer;
+
+    private boolean canDoubleJump;
 
 
 
@@ -90,6 +100,12 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
         //Initialize the jump variable.
         jump = 0;
+
+        JUMP_DELAY = 3;
+
+        canDoubleJump = false;
+
+        jumpDelayStart = System.currentTimeMillis();
 
         batch = new SpriteBatch();
         controller = new Controller();
@@ -244,42 +260,43 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
             //I don't really know what 'isUpPressed()' and 'isKeyJustPressed()' do.
             //I gotta look up the API specs...
             if(controller.isUpPressed()) {
-                if (Gdx.input.isKeyJustPressed(Input.Keys.UP)) {
+                //If player is grounded?
+                if (player.b2body.getLinearVelocity().y == 0) {
+                    // Clear the jump counter when player touches the ground...
+                    jump = 0;
 
-                    //If player is grounded?
-                    if (player.b2body.getLinearVelocity().y == 0) {
-                        player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
+                    player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
 
-                        //Increment jump count
-                        jump++;
+                    //Increment jump count
+                    jump++;
 
-                        // Clear the upPressed boolean
-                        controller.clearUpPressed();
-                    } else if (jump < 2) {
+                    // Clear the upPressed boolean
+                    //controller.clearUpPressed();
+                } else if (jump < 2 && (System.currentTimeMillis() - jumpDelayStart) / 1000 > JUMP_DELAY) {
 
-                        //Zero out vertical velocity??
-                        //This should prevent the second jump from being too high I think by momentarily
-                        //freezing the player in mid-air, ready to prepare for second jump.
-                        player.b2body.applyLinearImpulse(new Vector2(0, 0), player.b2body.getWorldCenter(), true);
+                    //Zero out vertical velocity??
+                    //This should prevent the second jump from being too high I think by momentarily
+                    //freezing the player in mid-air, ready to prepare for second jump.
+                    float currentVelocity = player.b2body.getLinearVelocity().y;
+                    player.b2body.applyLinearImpulse(new Vector2(0, -currentVelocity), player.b2body.getWorldCenter(), true);
 
-                        //Perform jump
-                        player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
+                    //Perform jump
+                    player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
 
-                        //Increment the jump counter.
-                        jump++;
+                    //Increment the jump counter.
+                    jump++;
 
-                        // Clear the upPressed boolean
-                        controller.clearUpPressed();
-                    }
-                    else {
-                        //Reset the jump counter.
-                        //Do not perform a jump.
-                        jump = 0;
-
-                        // Clear the upPressed boolean
-                        controller.clearUpPressed();
-                    }
+                    // Clear the upPressed boolean
+                    //controller.clearUpPressed();
                 }
+                else {
+                    //Reset the jump counter.
+                    //Do not perform a jump.
+                    jump = 0;
+
+                    jumpDelayStart = System.currentTimeMillis();
+                }
+                controller.clearUpPressed();
             }
             /*
             * ========================================
