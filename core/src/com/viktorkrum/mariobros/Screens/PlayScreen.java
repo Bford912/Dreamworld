@@ -14,10 +14,12 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.Timer;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.viktorkrum.mariobros.MarioBros;
@@ -46,6 +48,11 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
     private Viewport gamePort;
     private Hud hud;
     public boolean doubleJumped;
+
+    private int jump;
+
+    //Boolean to keep track of double jump eligibility.
+    private boolean canDoubleJump;
 
 
 
@@ -81,10 +88,8 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
     public PlayScreen(MarioBros game){
 
-
-
-
-
+        canDoubleJump = false;
+        jump = 0;
 
         batch = new SpriteBatch();
         controller = new Controller();
@@ -184,6 +189,9 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
 
 
+    /*
+    * Is this a duplicate jump handler??? -Josh
+    * */
     public boolean handleInput2 (float dt) {
 
         if (controller.isUpPressed() && player.b2body.getLinearVelocity().y == 0) {
@@ -212,6 +220,8 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
 
                 if (Gdx.input.isKeyJustPressed(Input.Keys.UP)) {
+
+                    //If player is grounded?
                     if (player.b2body.getLinearVelocity().y == 0) {
                         player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
                         doubleJumped = false;
@@ -221,6 +231,47 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
                     }
                 }
             }*/
+
+
+            /*
+            * ========================================
+            * Josh's jump handler, work in progress...
+            * ========================================
+            * */
+            //I am not sure about these first two if statements,
+            //but if they are correct I think the underlying logic
+            //should work?
+            //I don't really know what 'isUpPressed()' and 'isKeyJustPressed()' do.
+            //I gotta look up the API specs...
+            if(controller.isUpPressed()) {
+                //If player is grounded.
+                if (player.b2body.getLinearVelocity().y == 0) {
+                    player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
+
+                    //Set double jump allow...
+                    canDoubleJump = true;
+                } else if (canDoubleJump) {
+
+                    //Zero out vertical velocity??
+                    //This should prevent the second jump from being too high I think by momentarily
+                    //freezing the player in mid-air, ready to prepare for second jump.
+                    float currentVelocity = player.b2body.getLinearVelocity().y;
+                    player.b2body.applyLinearImpulse(new Vector2(0, -currentVelocity), player.b2body.getWorldCenter(), true);
+
+                    //Perform jump
+                    player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
+
+                    //Set double jump allow...
+                    canDoubleJump = false;
+                }
+                //Clear the isUpPressed boolean for future events...
+                controller.clearUpPressed();
+            }
+            /*
+            * ========================================
+            *
+            * ========================================
+            * */
 
 
 
@@ -272,6 +323,10 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
                 }*/
 
+
+                /*
+                * Some kind of shooting mechanic? -Josh
+                * */
                 if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE))
                     player.fire();
 
