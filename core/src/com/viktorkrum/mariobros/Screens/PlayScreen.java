@@ -49,17 +49,9 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
     private Hud hud;
     public boolean doubleJumped;
 
-    //Create a variable to store the current number of
-    //jumps made by the player. This should never be greater
-    //than 2.
     private int jump;
 
-    private long jumpDelayStart;
-
-    private final int JUMP_DELAY;
-
-    private int jumpDelayTimer;
-
+    //Boolean to keep track of double jump eligibility.
     private boolean canDoubleJump;
 
 
@@ -96,16 +88,8 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
 
     public PlayScreen(MarioBros game){
 
-
-
-        //Initialize the jump variable.
-        jump = 0;
-
-        JUMP_DELAY = 3;
-
         canDoubleJump = false;
-
-        jumpDelayStart = System.currentTimeMillis();
+        jump = 0;
 
         batch = new SpriteBatch();
         controller = new Controller();
@@ -260,19 +244,13 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
             //I don't really know what 'isUpPressed()' and 'isKeyJustPressed()' do.
             //I gotta look up the API specs...
             if(controller.isUpPressed()) {
-                //If player is grounded?
+                //If player is grounded.
                 if (player.b2body.getLinearVelocity().y == 0) {
-                    // Clear the jump counter when player touches the ground...
-                    jump = 0;
-
                     player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
 
-                    //Increment jump count
-                    jump++;
-
-                    // Clear the upPressed boolean
-                    //controller.clearUpPressed();
-                } else if (jump < 2 && (System.currentTimeMillis() - jumpDelayStart) / 1000 > JUMP_DELAY) {
+                    //Set double jump allow...
+                    canDoubleJump = true;
+                } else if (canDoubleJump) {
 
                     //Zero out vertical velocity??
                     //This should prevent the second jump from being too high I think by momentarily
@@ -283,19 +261,10 @@ public class PlayScreen extends ApplicationAdapter implements Screen{
                     //Perform jump
                     player.b2body.applyLinearImpulse(new Vector2(0, 5f), player.b2body.getWorldCenter(), true);
 
-                    //Increment the jump counter.
-                    jump++;
-
-                    // Clear the upPressed boolean
-                    //controller.clearUpPressed();
+                    //Set double jump allow...
+                    canDoubleJump = false;
                 }
-                else {
-                    //Reset the jump counter.
-                    //Do not perform a jump.
-                    jump = 0;
-
-                    jumpDelayStart = System.currentTimeMillis();
-                }
+                //Clear the isUpPressed boolean for future events...
                 controller.clearUpPressed();
             }
             /*
