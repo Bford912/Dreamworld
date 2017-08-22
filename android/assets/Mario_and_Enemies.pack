@@ -1,0 +1,229 @@
+
+Mario_and_Enemies.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+tree
+  rotate: false
+  xy: 1, 1081
+  size: 968, 959
+  orig: 968, 959
+  offset: 0, 0
+  index: -1
+rain6
+  rotate: false
+  xy: 1, 794
+  size: 1544, 285
+  orig: 1544, 285
+  offset: 0, 0
+  index: -1
+coolrun
+  rotate: false
+  xy: 1, 642
+  size: 1500, 150
+  orig: 1500, 150
+  offset: 0, 0
+  index: -1
+entireherc
+  rotate: false
+  xy: 1, 587
+  size: 1560, 53
+  orig: 1560, 53
+  offset: 0, 0
+  index: -1
+fire
+  rotate: false
+  xy: 1, 532
+  size: 1560, 53
+  orig: 1560, 53
+  offset: 0, 0
+  index: -1
+hercules
+  rotate: false
+  xy: 1, 462
+  size: 1292, 68
+  orig: 1292, 68
+  offset: 0, 0
+  index: -1
+hercpunch
+  rotate: false
+  xy: 1, 395
+  size: 1176, 65
+  orig: 1176, 65
+  offset: 0, 0
+  index: -1
+link
+  rotate: false
+  xy: 1, 325
+  size: 1156, 68
+  orig: 1156, 68
+  offset: 0, 0
+  index: -1
+diablo
+  rotate: false
+  xy: 971, 1940
+  size: 800, 100
+  orig: 800, 100
+  offset: 0, 0
+  index: -1
+kingkongo
+  rotate: false
+  xy: 1, 174
+  size: 746, 149
+  orig: 746, 149
+  offset: 0, 0
+  index: -1
+cooldude
+  rotate: false
+  xy: 971, 1870
+  size: 816, 68
+  orig: 816, 68
+  offset: 0, 0
+  index: -1
+shinrun
+  rotate: false
+  xy: 971, 1801
+  size: 815, 67
+  orig: 815, 67
+  offset: 0, 0
+  index: -1
+shinrun2
+  rotate: false
+  xy: 971, 1732
+  size: 815, 67
+  orig: 815, 67
+  offset: 0, 0
+  index: -1
+sorc
+  rotate: false
+  xy: 1, 104
+  size: 680, 68
+  orig: 680, 68
+  offset: 0, 0
+  index: -1
+shinstand
+  rotate: false
+  xy: 971, 1663
+  size: 674, 67
+  orig: 674, 67
+  offset: 0, 0
+  index: -1
+shinstand2
+  rotate: false
+  xy: 1, 35
+  size: 674, 67
+  orig: 674, 67
+  offset: 0, 0
+  index: -1
+explosion
+  rotate: false
+  xy: 971, 1593
+  size: 612, 68
+  orig: 612, 68
+  offset: 0, 0
+  index: -1
+15031333877721
+  rotate: false
+  xy: 971, 1541
+  size: 600, 50
+  orig: 600, 50
+  offset: 0, 0
+  index: -1
+lightning1
+  rotate: false
+  xy: 971, 1490
+  size: 600, 49
+  orig: 600, 49
+  offset: 0, 0
+  index: -1
+doom1
+  rotate: false
+  xy: 749, 255
+  size: 408, 68
+  orig: 408, 68
+  offset: 0, 0
+  index: -1
+portal2
+  rotate: false
+  xy: 971, 1420
+  size: 340, 68
+  orig: 340, 68
+  offset: 0, 0
+  index: -1
+frieza
+  rotate: false
+  xy: 749, 189
+  size: 329, 64
+  orig: 329, 64
+  offset: 0, 0
+  index: -1
+big_mario
+  rotate: false
+  xy: 1, 1
+  size: 336, 32
+  orig: 336, 32
+  offset: 0, 0
+  index: -1
+skull
+  rotate: false
+  xy: 1295, 462
+  size: 204, 68
+  orig: 204, 68
+  offset: 0, 0
+  index: -1
+little_mario
+  rotate: false
+  xy: 1179, 444
+  size: 224, 16
+  orig: 224, 16
+  offset: 0, 0
+  index: -1
+getshit
+  rotate: false
+  xy: 1773, 1972
+  size: 136, 68
+  orig: 136, 68
+  offset: 0, 0
+  index: -1
+shinhit
+  rotate: false
+  xy: 1647, 1665
+  size: 128, 65
+  orig: 128, 65
+  offset: 0, 0
+  index: -1
+bookitem
+  rotate: false
+  xy: 971, 1365
+  size: 67, 53
+  orig: 67, 53
+  offset: 0, 0
+  index: -1
+turtle
+  rotate: false
+  xy: 1313, 1464
+  size: 96, 24
+  orig: 96, 24
+  offset: 0, 0
+  index: -1
+goomba
+  rotate: false
+  xy: 683, 156
+  size: 48, 16
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+fireball
+  rotate: false
+  xy: 1503, 784
+  size: 32, 8
+  orig: 32, 8
+  offset: 0, 0
+  index: -1
+mushroom
+  rotate: false
+  xy: 1159, 377
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
